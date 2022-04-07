@@ -70,7 +70,8 @@ static const struct arg args[] = {
 	{ cpu_perc,          "CPU: %s%% | ",     NULL },
 	{ disk_free,         "/: %sB | ",      "/" },
 	/*{ run_command, "[VOL %s%%] | ", "/bin/sh -c \"amixer get Master | tail -n1 | grep -Po '\\[\\K[^%]*' | head -n1\"" },*/
-	{ ipv4,              "LAN: %s | ",       "enp2s0" },
+	{ netspeed_tx,       "NET:↑%s",       "enp2s0" },
+	{ netspeed_rx,       ":↓%s| ",       "enp2s0" },
 	{ vol_perc,          "VOL: %s%% | ", "/dev/mixer" },
 	{ datetime,          "%s",              "%b-%d %H:%M" },
 };
