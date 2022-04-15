@@ -65,13 +65,13 @@ static const char unknown_str[] = "";
  */
 static const struct arg args[] = {
 	/* function          format             argument */
-	{ ram_used,          "RAM: %s/",     NULL },
+	{ ram_used,          "Ram: %s/",     NULL },
 	{ ram_total,         "%s | ",       NULL },
-	{ cpu_perc,          "CPU: %s%% | ",     NULL },
+	{ cpu_perc,          "Cpu: %s%% | ",     NULL },
 	{ disk_free,         "/: %sB | ",      "/" },
 	/*{ run_command, "[VOL %s%%] | ", "/bin/sh -c \"amixer get Master | tail -n1 | grep -Po '\\[\\K[^%]*' | head -n1\"" },*/
-	{ netspeed_tx,       "NET:↑%s",       "enp2s0" },
-	{ netspeed_rx,       ":↓%s| ",       "enp2s0" },
-	{ vol_perc,          "VOL: %s%% | ", "/dev/mixer" },
+	{ netspeed_tx,       "Net:↑%s",       "enp2s0" },
+	{ netspeed_rx,       "↓%s| ",       "enp2s0" },
+	{ vol_perc,          "Vol: %s%% | ", "/dev/mixer" },
 	{ datetime,          "%s",              "%b-%d %H:%M" },
 };
